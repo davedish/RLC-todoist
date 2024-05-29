@@ -53,7 +53,7 @@ try:
                         + ' JBU' + m3['flt']
                         + ' ' + m3['orig'] + '-' + m3['dest'],
                         project_id="2215349894", 
-                        labels=["Urgent","Important"],
+                        #labels=["Urgent","Important"],
                         due_date=datetime.strftime(RlcDate,'%Y-%m-%d'),
                         priority=4)
     pprint(task)
@@ -63,7 +63,7 @@ try:
                         + ' JBU' + m3['flt']
                         + ' ' + m3['orig'] + '-' + m3['dest'],
                         project_id="2215349894", 
-                        labels=["Urgent","Important"],
+                        #labels=["Urgent","Important"],
                         due_date=datetime.strftime(RlcDate - timedelta(days=1),'%Y-%m-%d'),
                         priority=4)
     pprint(task)
@@ -72,7 +72,7 @@ try:
                         + ' JBU' + m3['flt']
                         + ' ' + m3['orig'] + '-' + m3['dest'],
                         project_id="2215349894", 
-                        labels=["Urgent","Important"],
+                        #labels=["Urgent","Important"],
                         due_date=datetime.strftime(RlcDate + timedelta(days=1),'%Y-%m-%d'),
                         priority=4)
     pprint(task)
