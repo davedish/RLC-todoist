@@ -55,7 +55,7 @@ try:
                         project_id="2215349894", 
                         labels=["Urgent","Important"],
                         due_date=datetime.strftime(RlcDate,'%Y-%m-%d'),
-                        priority=1)
+                        priority=4)
     pprint(task)
 
     task = api.add_task(content="Crew Check " 
@@ -65,7 +65,7 @@ try:
                         project_id="2215349894", 
                         labels=["Urgent","Important"],
                         due_date=datetime.strftime(RlcDate - timedelta(days=1),'%Y-%m-%d'),
-                        priority=1)
+                        priority=4)
     pprint(task)
     task = api.add_task(content="Grade RLC " 
                         + m1['pos'] + ' ' + m1['name']
@@ -74,7 +74,7 @@ try:
                         project_id="2215349894", 
                         labels=["Urgent","Important"],
                         due_date=datetime.strftime(RlcDate + timedelta(days=1),'%Y-%m-%d'),
-                        priority=1)
+                        priority=4)
     pprint(task)
 except Exception as error:
     print(error)
